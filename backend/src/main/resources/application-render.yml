@@ -1,0 +1,8 @@
+# Render-only logging settings. Connection details arrive through DATABASE_URL.
+spring:
+  jpa:
+    show-sql: false
+
+logging:
+  level:
+    org.springframework.security: WARN

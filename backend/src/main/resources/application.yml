@@ -1,0 +1,23 @@
+﻿spring:
+  application:
+    name: full-stack-test-backend
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/full_stack_test}
+    username: ${DB_USERNAME:postgres}
+    password: ${DB_PASSWORD:postgres}
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+server:
+  port: ${PORT:8080}
+
+logging:
+  level:
+    org.springframework.security: INFO

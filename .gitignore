@@ -1,0 +1,21 @@
+# Java / Spring Boot
+backend/target/
+backend/.mvn/
+
+# Next.js
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+
+# Local environment files
+.env
+.env.local
+backend/.env
+frontend/.env.local
+
+# Editor and OS files
+.vscode/
+.idea/
+*.iml
+.DS_Store
+Thumbs.db
